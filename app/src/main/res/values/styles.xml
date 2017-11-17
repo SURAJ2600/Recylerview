@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    <declare-styleable name="PickerUI">
+    <!-- to use in PickerUI in the panel -->
+    <attr name="backgroundColor"    format="color"/>
+    <attr name="linesCenterColor"   format="color"/>
+
+    <!-- to use in PickerUIListView -->
+    <attr name="autoDismiss"        format="boolean"/>
+    <attr name="itemsClickables"    format="boolean"/>
+    <attr name="entries"            format="reference"/>
+
+    <!-- to use in PickerUI in the PickerUIListView by PickerUIAdapter -->
+    <attr name="textCenterColor"    format="color"/>
+    <attr name="textNoCenterColor"  format="color"/>
+
+    <!-- Blur Attributes -->
+    <attr name="blur"                   format="boolean"/>
+    <attr name="blur_downScaleFactor"   format="float"/>
+    <attr name="blur_FilterColor"       format="color"/>
+    <attr name="blur_radius"            format="integer"/>
+    <attr name="blur_use_renderscript"  format="boolean"/>
+</declare-styleable>
+</resources>
